@@ -1,4 +1,4 @@
-package Arrays.DSASheet;
+package Arrays.PrefixSum;
 import java.util.HashMap;
 /*
 TWO SUM – PROBLEM STATEMENT
