@@ -27,7 +27,7 @@ public class _10LongestSubArrayWithSumKAll {
                 maxLen = Math.max(maxLen, i - map.get(prefixSum - k));
             }
 
-            // store first occurrence only
+
             if (!map.containsKey(prefixSum)) {
                 map.put(prefixSum, i);
             }
