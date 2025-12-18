@@ -30,7 +30,7 @@ Approach:
 - Space Complexity: O(1)
 */
 
-public class _13MajorityElement {
+public class    _13MajorityElement {
     public static int majorityElement(int arr[]) {
         // code here
         HashMap<Integer,Integer> map = new HashMap<>();
