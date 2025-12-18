@@ -1,6 +1,6 @@
-package Arrays.Sorting;
+package Arrays;
 
-public class KadanesAlgo {
+public class _14KadanesAlgo {
     public static int maxSum(int nums[]){
         int n = nums.length;
         int sum = 0;
