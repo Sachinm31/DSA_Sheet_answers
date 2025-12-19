@@ -41,6 +41,66 @@ Expected Space Complexity:
 - O(N)
 */
 
-public class _19LongestZeroSumSubarray {
+import java.util.HashMap;
 
+public class _19LongestZeroSumSubarray {
+    public static int maxSubarraysumZero(int nums[]){
+        int n = nums.length;
+        HashMap<Integer,Integer> map = new HashMap<>();
+        int preSum = 0;
+        int maxLen = 0;
+
+        for(int i=0;i<n;i++){
+            preSum+=nums[i];
+
+            if(preSum==0){
+                maxLen=i+1;
+            }
+            if (map.containsKey(preSum)){
+                maxLen=Math.max(maxLen,i-map.get(preSum));
+            }else{
+                map.put(preSum,i);
+            }
+        }
+        return maxLen;
+    }
+    public static void main(String[] args) {
+        int[] nums = {15, -2, 2, -8, 1, 7, 10, 23};
+
+        int result = maxSubarraysumZero(nums);
+        System.out.println("Length of longest zero-sum subarray: " + result);
+    }
 }
+/*
+ INTERVIEW EXPLANATION – LARGEST SUBARRAY WITH ZERO SUM
+
+ Problem:
+ Given an array, find the length of the longest contiguous subarray
+ whose sum is equal to 0.
+
+ Key Idea:
+ Use Prefix Sum + HashMap.
+
+ Observation:
+ - If prefixSum becomes 0 at index i, then subarray [0..i] has sum 0.
+ - If the same prefixSum occurs again at index j,
+   then the subarray between those two indices has sum 0.
+
+   Because:
+   prefixSum[j] - prefixSum[i] = 0  → sum(i+1 to j) = 0
+
+ Approach:
+ - Traverse the array while maintaining a running prefixSum.
+ - Store the FIRST occurrence of each prefixSum in a HashMap.
+ - If prefixSum == 0, update max length as i + 1.
+ - If prefixSum is already in the map,
+   calculate length = currentIndex - firstIndexStored.
+ - Always keep the maximum length found.
+
+ Important Note:
+ - Store only the first occurrence of each prefixSum
+   to maximize the subarray length.
+
+ Time Complexity: O(n)
+ Space Complexity: O(n)
+*/

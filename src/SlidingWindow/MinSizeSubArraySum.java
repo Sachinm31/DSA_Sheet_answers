@@ -1,4 +1,4 @@
-package Arrays.SlidingWindow;
+package SlidingWindow;
 /**
  * Problem: Minimum Size Subarray Sum (LeetCode 209)
  *

@@ -1,4 +1,4 @@
-package Arrays.Sorting;
+package Sorting;
 /*
 Problem: Find the Missing Number in an Array
 

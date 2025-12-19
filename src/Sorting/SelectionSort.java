@@ -1,4 +1,4 @@
-package Arrays.Sorting;
+package Sorting;
 //Concept
 //
 //        You select the smallest element from the unsorted part

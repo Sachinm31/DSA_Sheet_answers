@@ -1,4 +1,4 @@
-package Arrays.SlidingWindow;
+package SlidingWindow;
 
 /**
  * Problem: Maximum Average Subarray of Size K (LeetCode 643 style)

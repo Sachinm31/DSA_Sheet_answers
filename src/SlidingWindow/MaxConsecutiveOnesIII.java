@@ -1,4 +1,4 @@
-package Arrays.SlidingWindow;
+package SlidingWindow;
 /**
  * Problem: Max Consecutive Ones III (LeetCode 1004)
  *

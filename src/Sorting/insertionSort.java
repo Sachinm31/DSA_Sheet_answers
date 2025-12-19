@@ -1,4 +1,4 @@
-package Arrays.Sorting;
+package Sorting;
 //Insertion sort works exactly like how you arrange playing cards in your hand:
 //
 //        You take one card at a time
