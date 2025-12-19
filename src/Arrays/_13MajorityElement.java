@@ -31,24 +31,41 @@ Approach:
 */
 
 public class    _13MajorityElement {
-    public static int majorityElement(int arr[]) {
-        // code here
-        HashMap<Integer,Integer> map = new HashMap<>();
-        int  n = arr.length;
+//    public static int majorityElement(int arr[]) {
+//        // code here
+//        HashMap<Integer,Integer> map = new HashMap<>();
+//        int  n = arr.length;
+//
+//        for(int i = 0;i<n;i++){
+//            map.put(arr[i],map.getOrDefault(arr[i],0)+1);
+//        }
+//
+//        for(int num:arr){
+//            if(map.get(num)>n/2){
+//                return num;
+//            }
+//        }
+//        return -1;
+//    }
+    public static int majorityElement2(int[] nums) {
 
-        for(int i = 0;i<n;i++){
-            map.put(arr[i],map.getOrDefault(arr[i],0)+1);
-        }
+        int count = 0;
+        int current = nums[0];
 
-        for(int num:arr){
-            if(map.get(num)>n/2){
-                return num;
+        for(int num:nums){
+            if(count==0){
+                current = num;
+            }
+            if(current==num){
+                count++;
+            }else{
+                count--;
             }
         }
-        return -1;
+        return current;
     }
     public static void main(String[] args) {
         int[] nums = {2, 2, 1, 1, 3,3,3,3,3,3,3,3,3,3,3,1, 2, 2};
-        System.out.println(majorityElement(nums)); // 2
+        System.out.println(majorityElement2(nums));
     }
 }
