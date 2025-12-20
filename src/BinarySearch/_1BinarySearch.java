@@ -1,6 +1,6 @@
 package BinarySearch;
 
-public class BinarySearch {
+public class _1BinarySearch {
     public static int search(int[] nums,int target){
         int n = nums.length;
         int start = 0;

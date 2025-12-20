@@ -16,7 +16,7 @@ package BinarySearch;
  Output: 4
 */
 
-public class SearchInsert {
+public class _2SearchInsert {
     public int searchInsert(int[] nums, int target) {
         int n = nums.length;
         int start = 0;
@@ -36,7 +36,7 @@ public class SearchInsert {
         return start;
     }
     public static void main(String[] args) {
-        SearchInsert obj = new SearchInsert();
+        _2SearchInsert obj = new _2SearchInsert();
 
         int[] nums = {1, 3, 5, 6};
 
