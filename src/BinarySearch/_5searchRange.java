@@ -30,6 +30,9 @@ public class _5searchRange {
         int first = findFirst(nums,target);
         int second = findSecond(nums,target);
 
+//        count occurances
+        System.out.println("count :- "+ (second-first+1));
+
         return new int[]{first,second};
     }
     public static int findFirst(int nums[],int target){
