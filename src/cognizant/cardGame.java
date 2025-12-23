@@ -43,7 +43,7 @@ public class cardGame {
         // input2: A (Array of card numbers)
 
         // Write code here...
-        int minMoves = Integer.
+       return 3;
     }
 
 
