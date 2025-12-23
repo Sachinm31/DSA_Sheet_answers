@@ -1,4 +1,4 @@
-package BinarySearch;
+package BinarySearch.BS;
 import java.util.*;
 /*
 Problem: Find First and Last Position of Element in Sorted Array

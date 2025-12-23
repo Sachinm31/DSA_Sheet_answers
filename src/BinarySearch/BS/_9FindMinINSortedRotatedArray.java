@@ -1,4 +1,4 @@
-package BinarySearch;
+package BinarySearch.BS;
 /*
 ------------------------------------------------------------
 Problem: Find Minimum in Rotated Sorted Array

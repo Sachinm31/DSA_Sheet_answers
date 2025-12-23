@@ -1,4 +1,4 @@
-package BinarySearch;
+package BinarySearch.BS;
 /*
  Problem Statement:
  Given a sorted array of distinct integers and a target value,
