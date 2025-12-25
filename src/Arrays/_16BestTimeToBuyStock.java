@@ -39,7 +39,8 @@ Constraints:
         for(int num : nums){
             if(num<minVal){
                 minVal = num;
-            } maxPro=Math.max(maxPro,num-minVal);
+            }
+                maxPro=Math.max(maxPro,num-minVal);
         }
         return maxPro;
     }
