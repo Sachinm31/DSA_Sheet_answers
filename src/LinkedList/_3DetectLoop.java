@@ -2,6 +2,7 @@ package LinkedList;
 
 
 
+
 public class _3DetectLoop {
 
     // Floyd's Cycle Detection Algorithm
@@ -25,22 +26,5 @@ public class _3DetectLoop {
     }
 
     // Demo main() to run and verify
-    public static void main(String[] args) {
 
-        DetectLoop obj = new DetectLoop();
-
-        // Create linked list: 1 -> 2 -> 3 -> 4 -> 5
-        Node head = new Node(1);
-        head.next = new Node(2);
-        head.next.next = new Node(3);
-        head.next.next.next = new Node(4);
-        head.next.next.next.next = new Node(5);
-
-        // Creating a loop: last node -> node with value 3
-        head.next.next.next.next.next = head.next.next;
-
-        boolean hasLoop = obj.detectLoop(head);
-
-        System.out.println("Loop detected: " + hasLoop);
-    }
 }
