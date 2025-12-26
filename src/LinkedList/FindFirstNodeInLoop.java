@@ -1,48 +1,24 @@
 package LinkedList;
 
 public class FindFirstNodeInLoop {
-    /*
-class Node {
-    int data;
-    Node next;
+    public ListNode detectCycle(ListNode head) {
+        if (head == null || head.next == null) return null;
+        ListNode slow = head;
+        ListNode fast = head;
 
-    Node(int x)
-    {
-        data = x;
-        next = null;
-    }
-};
-*/
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
 
-        public int cycleStart(Node head) {
-            // code here
-            if(head==null || head.next==null){
-                return -1;
-            }
-
-            Node s= head;
-            Node f = head;
-
-            while(f!=null && f.next!=null){
-                s=s.next;
-                f=f.next.next;
-
-                if(s==f){
-                    break;
+            if (slow == fast) {
+                ListNode entry = head;
+                while (entry != slow) {
+                    entry = entry.next;
+                    slow = slow.next;
                 }
+                return entry;
             }
-
-            if(f==null || f.next==null){
-                return -1;
-            }
-            s= head;
-
-            while(s!=f){
-                s=s.next;
-                f=f.next;
-            }
-
-            return s.data;
         }
-
+        return null;
+    }
 }
