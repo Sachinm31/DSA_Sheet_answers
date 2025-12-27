@@ -15,7 +15,7 @@ package LinkedList;
  * - We return the intersecting Node (same memory address), not just the equal value.
  */
 
-public class IntersectionPointer {
+public class _12IntersectionPointer {
     // Function to find intersection point of two linked lists (Y-shaped)
 // Approach: Two Pointer Switching Technique
 // Time: O(n + m), Space: O(1)
