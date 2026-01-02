@@ -1,6 +1,6 @@
 package SlidingWindow.Type1;
 
-public class SkeletonCode {
+public class _0SkeletonCode {
         public int fixedSlidingWindow(int[] arr, int k) {
             int n = arr.length;
 
