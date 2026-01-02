@@ -13,7 +13,7 @@ otherwise return false.
 You must design an algorithm with O(m + n) time complexity.
 */
 
-public class searchMatrix2 {
+public class _3searchMatrix2 {
 
     public boolean searchMatrix(int[][] matrix, int target) {
         int row = 0;
@@ -33,7 +33,7 @@ public class searchMatrix2 {
 
     // Main method for testing
     public static void main(String[] args) {
-        searchMatrix2 sm = new searchMatrix2();
+        _3searchMatrix2 sm = new _3searchMatrix2();
 
         int[][] matrix = {
                 {1,  4,  7, 11, 15},

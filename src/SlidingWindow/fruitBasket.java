@@ -1,4 +1,4 @@
-package SlidingWindow.Type1;
+package SlidingWindow;
 /**
  * Problem: Fruit Into Baskets (LeetCode 904)
  *
