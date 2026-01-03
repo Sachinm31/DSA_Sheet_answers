@@ -33,7 +33,7 @@ import java.util.HashMap;
  O(min(n, charset))
 */
 
-public class LongestSubStringWithoutRepeat {
+public class _1LongestSubStringWithoutRepeat {
 
     // ---------- STATIC METHOD ----------
     public static int lengthOfLongestSubstring(String s) {
